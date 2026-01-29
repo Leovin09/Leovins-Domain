@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  <meta charset="UTF-8" />
+  <title>Insane</title>
+  <link rel="stylesheet" href="style.css">
+  
+
+  <!-- GSAP -->
+  <script src="https://unpkg.com/gsap@3/dist/gsap.min.js"></script>
+  <script src="https://unpkg.com/gsap@3/dist/ScrollTrigger.min.js"></script>
+
+  <!-- Lenis -->
+  <script src="https://unpkg.com/@studio-freight/lenis"></script>
+
+  <!-- Vanilla Tilt -->
+  <script src="https://unpkg.com/vanilla-tilt@1.8.0/dist/vanilla-tilt.min.js"></script>
+</head>
+<body>
+
+  <div class="cursor-glow"></div>
+
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+
+
+<!-- HAMBURGER -->
+<button class="hamburger" id="hamburger" aria-label="Open menu">
+  <span></span>
+  <span></span>
+  <span></span>
+</button>
+
+<!-- OVERLAY -->
+<div class="menu-overlay" id="menuOverlay"></div>
+
+<!-- SIDE MENU -->
+<nav class="side-menu" id="sideMenu">
+  <ul>
+    <li><a href="#about">About Me</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#experience">Experience</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
+
+
+
+  <!-- HERO -->
+  <section class="homepage-intro">
+  <div class="intro-text">
+    <h1>Leovin Berbal</h1>
+    <h3>Technical Support Engineer</h3>
+    <p>Delivering reliable, user-friendly technical solutions</p>
+  </div>
+  <div class="intro-photo">
+    <div class="photo-bubble-border">
+      <img src="images/Me1.jpg" alt="Leovin Berbal Photo" />
+    </div>
+  </div>
+</section>
+
+
+<section class="section about" id="about">
+  <h2>About Me</h2>
+  <p>
+    Passionate Technical Support Engineer focused on delivering reliable,
+    user-friendly technical solutions. Committed to resolving issues efficiently,
+    improving system performance, and ensuring a positive user experience through
+    clear communication and proactive support.
+  </p>
+
+  <h2 style="margin-top:3rem;">Objective</h2>
+  <p>
+    To build a successful career in the IT industry by applying my technical
+    support skills, problem-solving abilities, and passion for technology to
+    deliver efficient solutions and support business operations.
+  </p>
+</section>
+
+
+
+  <!-- SKILLS -->
+  <section class="section skills" id="skills">
+  <h2>Technical Skills</h2>
+  <div class="skills-grid">
+    <div class="skill">Adobe Photoshop</div>
+    <div class="skill">HTML & CSS</div>
+    <div class="skill">Office 365 (Excel, Outlook)</div>
+    <div class="skill">Hardware & Software Troubleshooting</div>
+    <div class="skill">Root Cause Analysis</div>
+    <div class="skill">Data Analysis</div>
+    <div class="skill">Oracle SQL</div>
+    <div class="skill">Python</div>
+    <div class="skill">Opera PMS Cloud</div>
+    <div class="skill">Graphic Design</div>
+  </div>
+</section>
+
+
+  <!-- PHOTO STORY -->
+<section class="section photo-story">
+  <div class="photo-item">
+    <img src="images/Me.jpg">
+    <div class="photo-text">
+      <h3>Hello, I’m Leovin</h3>
+      <p>
+        A Technical Support Engineer with hands-on experience in troubleshooting,
+        system support, and customer-focused IT solutions.
+      </p>
+
+    </div>
+  </div>
+
+  <div class="photo-item reverse">
+    <img src="images/Me3.jpg">
+    <div class="photo-text">
+      <h3>Support & Problem Solving</h3>
+      <p>
+        I specialize in diagnosing issues, performing root cause analysis, and
+        delivering clear, effective resolutions that keep systems running smoothly.
+      </p>
+
+    </div>
+  </div>
+
+  <div class="photo-item">
+    <img src="images/Me4.jpg">
+    <div class="photo-text">
+      <h3>Always Learning</h3>
+      <h3>Always Improving</h3>
+      <p>
+        Motivated by curiosity and a hunger for growth, I constantly pursue new
+        knowledge, tools, and technologies. I believe continuous learning is key to
+        delivering better solutions, adapting to change, and becoming a stronger
+        technical support professional.
+      </p>
+
+    </div>
+  </div>
+</section>
+
+<!--EXPERIENCE-->
+  <section class="section experience" id="experience">
+  <h2>Experience</h2>
+  <div class="projects-grid">
+
+  <!-- Technical Support Executive -->
+  <div class="project-card experience-card">
+    <strong>Technical Support Executive</strong><br />
+    <span class="company">Datamatics</span>
+
+    <div class="experience-tooltip">
+      Provided technical support for PSI online examinations by troubleshooting
+      device compatibility and system requirement issues. Managed and documented
+      support tickets using Zendesk and Jira while ensuring SLA compliance, and
+      guided test takers through system checks to ensure a smooth and compliant
+      testing experience.
+    </div>
+  </div>
+
+  <!-- Technical Support Engineer -->
+  <div class="project-card experience-card">
+    <strong>Technical Support Engineer</strong><br />
+    <span class="company">AZpired</span>
+
+    <div class="experience-tooltip">
+      Delivered customer and technical support by analyzing requirements,
+      resolving system issues, and documenting solutions. Monitored application
+      performance, managed escalations, configured PMS settings, maintained
+      technical documentation, and supported training and testing initiatives to
+      improve system reliability and user satisfaction.
+    </div>
+  </div>
+
+  <!-- Lay-out Artist & Technician -->
+  <div class="project-card experience-card">
+    <strong>Lay-out Artist & Technician</strong><br />
+    <span class="company">Freelance</span>
+
+    <div class="experience-tooltip">
+      Created and designed visual layouts for print and digital media using Adobe
+      Photoshop while providing hardware and software troubleshooting support.
+      Collaborated with clients to deliver customized design solutions, prepared
+      production-ready artwork aligned with brand guidelines, and managed multiple
+      projects while meeting deadlines and quality standards.
+    </div>
+  </div>
+
+  <!-- Customer Service Representative -->
+  <div class="project-card experience-card">
+    <strong>Customer Service Representative</strong><br />
+    <span class="company">Alorica</span>
+
+    <div class="experience-tooltip">
+      Managed an average of 20 inbound customer service calls daily in the home
+      warranty sector, coordinating service requests, dispatching professionals,
+      maintaining accurate records, and resolving complex inquiries while meeting
+      quality standards.
+    </div>
+  </div>
+
+  <!-- Contact Tracer -->
+  <div class="project-card experience-card">
+    <strong>Contact Tracer</strong><br />
+    <span class="company">DILG Surigao</span>
+
+    <div class="experience-tooltip">
+      Systematically tracked and managed COVID-19 case and close-contact data
+      using Excel, ensuring accurate aggregation, organization, and documentation
+      to support public health monitoring and reporting.
+    </div>
+  </div>
+
+</div>
+
+</section>
+
+
+  <!-- CONTACT -->
+  <section class="section contact" id="contact">
+  <h2>Connect with me</h2>
+
+  <div class="contact-list">
+    <a href="mailto:leovinberbal0998@gmail.com" class="contact-item">
+      <span class="contact-icon"><i data-lucide="mail"></i></span>
+      <span class="contact-text">leovinberbal0998@gmail.com</span>
+    </a>
+
+    <a href="tel:+639126099140" class="contact-item">
+      <span class="contact-icon"><i data-lucide="phone"></i></span>
+      <span class="contact-text">+63 912 609 9140</span>
+    </a>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="footer-text">
+    All rights reserved - Insane | <span id="live-time">--:--:--</span> <span id="live-date">---</span>
+  </div>
+</footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
